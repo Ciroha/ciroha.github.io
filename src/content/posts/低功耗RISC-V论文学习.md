@@ -13,13 +13,13 @@ comments: true
 
 # RV16: An Ultra-Low-Cost Embedded RISC-V Processor Core
 
-![](https://cdn.nlark.com/yuque/0/2024/png/29081281/1728543464233-3f68bc32-e4d2-47ed-9c24-3d96ccddc079.png)
+![](../../assets/images/低功耗论文/1.png)
 
 两级流水线、datapath用的是16位的，面积小且功耗小。可配置支持指令集。
 
-# <font style="color:rgb(0,0,0);">HAMSA-DI: A Low-Power Dual-Issue RISC-V Core Targeting Energy-Efficient Embedded Systems</font>
+# HAMSA-DI: A Low-Power Dual-Issue RISC-V Core Targeting Energy-Efficient Embedded Systems
 
-![](https://cdn.nlark.com/yuque/0/2024/png/29081281/1728720821741-52ff7e81-1893-422b-be7f-5343633a6644.png)
+![](../../assets/images/低功耗论文/2.png)
 
 本文基于开源的RI5CY处理器核进行拓展，通过改进寄存器文件、预取指和加入L0cache，将单发射改为了双发射。提高了性能的同时，功耗也没有提高太多。
 
@@ -36,21 +36,21 @@ Issue1为主发射队列，Issue2为副发射队列。主发射队列与原先�
 
 RI5CY的微架构如下：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/29081281/1728787045714-810ca11e-2089-4935-9e36-be45e1c94a54.png)
+![](../../assets/images/低功耗论文/3.png)
 
 指令预取单元主要有两个作用，一是在多处理器核同时从指令缓存中取指时，提高取指性能；二是在Icache边缘进行非对齐访问时，如果没有Prefetch，则会需要两个时钟周期才可取得指令，有preftch buffer的话，则可以在一个周期内取出，该情况见下图：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/29081281/1728788302581-9bd7398b-4632-45f8-9583-51dee502b801.png)
+![](../../assets/images/低功耗论文/4.png)
 
 ## L0-cache的设计逻辑
 
 L0 cache的适用于双发射的取指判断策略，Issue1作为主队列必须发射，Issue2可为空：
 
-![](https://cdn.nlark.com/yuque/0/2024/gif/29081281/1728806684764-71559944-dbba-4abb-999b-44f05489b85e.gif)
+![](../../assets/images/低功耗论文/5.gif)
 
 ## Register file的选择
 
-![](https://cdn.nlark.com/yuque/0/2024/png/29081281/1728889437526-4cbd060b-f37e-4bb1-9f10-2279d0640c46.png)
+![](../../assets/images/低功耗论文/6.png)
 
 由于如果直接将寄存器文件复制到第二个队列，会导致有两个寄存器文件，会出现存储一致性的相关问题。因此，为了简化设计，直接将寄存器设计为一个5R3W的寄存器文件。其中，Issue1队列用到的是3R2W，Issue2队列用到的是2R1W。Cross-Forwarding Logic是用于处理RAW冲突等的前递逻辑。
 
@@ -67,7 +67,7 @@ IDU负责将对第二条指令进行检测、取指、检查依赖，如果没�
 
 以一个点乘为例对执行模块进行介绍：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/29081281/1728904563104-429978e7-6809-4752-a5b1-59fddedf0cec.png)
+![](../../assets/images/低功耗论文/7.png)
 
 红色框内的是四个展开的循环迭代操作，展开的操作基于双发射的硬件特性，将仅在Issue1中支持的访存操作和Issue2所支持的操作进行“交叉”发射以尽最大可能利用双发射。通过将点乘指令所需要的两个操作数提前两个周期取出，最终可以达到每个周期执行2个8bit的MAC操作。
 
@@ -75,10 +75,10 @@ IDU负责将对第二条指令进行检测、取指、检查依赖，如果没�
 
 为了对处理器核的性能、功耗、面积等进行测算，使用了CoreMark、Embench中的Nettle-AES和Dot Product这三个程序作为基准程序，分别对比了各种情况下（L0-Cache、Dual Issue）的功耗与性能。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/29081281/1728915891479-5f3384d8-cd21-49ab-973b-96ecfdfebbfc.png)
+![](../../assets/images/低功耗论文/8.png)
 
-# <font style="color:rgb(0,0,0);">A High-Performance Core Micro-Architecture Based on RISC-V ISA for Low Power Applications</font>
+# A High-Performance Core Micro-Architecture Based on RISC-V ISA for Low Power Applications
 
 ## 微架构总览
 
-![](https://cdn.nlark.com/yuque/0/2024/png/29081281/1728916106080-e8368043-a1a7-4d7e-835b-a16ba032166c.png)
+![](../../assets/images/低功耗论文/9.png)
