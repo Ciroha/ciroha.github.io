@@ -1,7 +1,7 @@
 {
   "site": {
     "url": "https://ciroha.github.io",
-    "title": "博客",
+    "title": "Ciroha的个人博客",
     "description": "这是一个有理想的人走过的漫长道路",
     "keywords": "Ciroha,blog,dream,indra,博客,逐梦",
     "lang": "zh-CN",
@@ -15,13 +15,13 @@
   },
   "hero": {
     "name": "Ciroha",
-    "bio": "一个为理想痴狂实干的疯子",
+    "bio": "Research interest is risc-v processors",
     "description": "理想是追随稚晖君,欢迎一同学习",
     "socials": [
       {
         "name": "Github",
         "icon": "icon-github",
-        "url": "https://github.com/drowsyindra",
+        "url": "https://github.com/Ciroha",
         "color": "rgb(239, 70, 107)"
       },
       {
@@ -107,7 +107,7 @@
     "perPage": 10
   },
   "footer": {
-    "startTime": "2024-07-29T00:00:00Z"
+    "startTime": "2024-10-15T11:48:00Z"
   },
   "docSearch": {
     "appId": "",
