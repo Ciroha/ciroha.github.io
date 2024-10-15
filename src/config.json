@@ -15,8 +15,8 @@
   },
   "hero": {
     "name": "Ciroha",
-    "bio": "bio test",
-    "description": "descripction test",
+    "bio": "RISC-V CPU design",
+    "description": "Low-power & High-performance Achitecture",
     "socials": [
       {
         "name": "Github",
@@ -49,7 +49,7 @@
         "color": "rgb(106,90,205)"
       }
     ],
-    "yiyan": "yiyan test"
+    "yiyan": "You only live once!"
   },
   "color": {
     "accent": [
