@@ -15,8 +15,8 @@
   },
   "hero": {
     "name": "Ciroha",
-    "bio": "Research interest is risc-v processors",
-    "description": "Research interest is risc-v processors",
+    "bio": "bio test",
+    "description": "descripction test",
     "socials": [
       {
         "name": "Github",
