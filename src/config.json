@@ -41,12 +41,6 @@
         "icon": "icon-zhihu",
         "url": "https://www.zhihu.com/people/Ciroha",
         "color": "rgb(42, 147, 213)"
-      },
-      {
-        "name": "X",
-        "icon": "icon-x",
-        "url": "https://x.com/kunyi68226",
-        "color": "rgb(106,90,205)"
       }
     ],
     "yiyan": "You only live once!"
