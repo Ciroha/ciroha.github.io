@@ -5,7 +5,6 @@ summary: 介绍低功耗处理器的相关论文
 category: 低功耗处理器
 tags: [RISC-V, 处理器, 低功耗]
 comments: true
-sticky: 1
 ---
 
 # 介绍
