@@ -3,7 +3,7 @@ title: 蜂鸟E203处理器核学习
 date: 2024-10-16
 summary: 学习蜂鸟低功耗处理器的代码
 category: 低功耗处理器
-tags: [RISC-V, 处理器, 低功耗]
+tags: [RISC-V, 处理器, 低功耗, 数字IC]
 comments: true
 ---
 

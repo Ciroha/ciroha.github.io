@@ -3,7 +3,7 @@ title: 数字IC&体系结构学习
 date: 2024-10-16
 summary: 体系结构学习的相关网站与建议
 category: 计算机体系结构
-tags: [体系结构, 处理器]
+tags: [体系结构, 处理器, 数字IC]
 comments: true
 sticky: 1
 ---

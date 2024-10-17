@@ -3,7 +3,7 @@ title: 低功耗RISC-V论文学习
 date: 2024-10-15
 summary: 介绍低功耗处理器的相关论文
 category: 低功耗处理器
-tags: [RISC-V, 处理器, 低功耗]
+tags: [RISC-V, 处理器, 低功耗, 数字IC]
 comments: true
 ---
 
