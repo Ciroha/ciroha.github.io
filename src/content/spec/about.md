@@ -6,7 +6,7 @@ comments: false
 
 ## 关于作者
 
-我是Ciorha,目前就读于SEU集成电路工程专业，研究方向是低功耗RISC-V处理器。
+我是Ciroha，目前就读于SEU集成电路工程专业，研究方向是低功耗RISC-V处理器。
 
 ## 关于 Gyoza
 
