@@ -15,7 +15,7 @@ comments: true
 
 单bit的半加器（half-adders）与全加器（full-adders）是用于合成加法器和其他算数电路的基本构建模块。一个HA接受两个输入分别是x和y，输出一个和s和一个进位c。
 
-![](../../assets/images/硬件算数算法设计/1.png)
+<img src="https://cdn.nlark.com/yuque/0/2024/png/29081281/1729146589414-f8740e6b-8428-4af6-b3a3-ee3abbcc39eb.png" alt="一只睡觉的猫。" referrerpolicy="no-referrer">
 
 HA的门级实现如上图所示，有三种不同的实现方法。
 
